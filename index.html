@@ -14,59 +14,85 @@
     <article>
         <form action="" method="get">
 
+            <h1>Tipo de conta</h1>
             <div class="tipoDe_pessoa forms">
-                <label>Pessoa Física
-                    <input type="radio" name="tipo_conta" value="pessoa_fisica"/>
-                </label>
-
+                    <label>Pessoa Física
+                        <input type="radio" name="tipo_conta" value="pessoa_fisica"/>
+                    </label>
                 <label>Pessoa Jurídica
-                    <input type="radio" name="tipo_conta" value="pessoa_juridica"/>
+                     <input type="radio" name="tipo_conta" value="pessoa_juridica"/>
                 </label>
             </div>
 
-            <label>Nome Completo*
-                <input type="text" name="nome"/>
-            </label>
 
-            <label>CPF*
-                <input type="number" name="cpf"/>
-            </label>
+            <div class="form_part1 forms">
+                <div class="separacao">
+                    <label>Nome Completo*
+                        <input type="text" name="nome"/>
+                    </label>
+                </div>
 
-            <label>Data de Nascimento*</label>
-            <input type="date" name="nascimento"/>
+                <div class="separacao">
+                    <label>CPF*
+                        <input type="number" name="cpf"/>
+                    </label>
+                </div>
+            </div>
 
-            <label>Número de Telefone*
-                <input type="tel" name="nascimento"/>
-            </label>
+            <div class="form_part2 forms">
+                <div class="superacao data">
+                    <label>Data de Nascimento*
+                        <input type="date" name="nascimento"/>
+                    </label>
+                </div>
 
-            <label>E-mail*
-                <input type="email" name="email"/>
-            </label>
+                <div class="superacao telefone">
+                    <label>Número de Telefone*
+                        <input type="tel" name="nascimento"/>
+                    </label>
+                </div>
+            </div>
 
-            <label>Crie sua senha*
-                <input type="password" name="senha"/>
-            </label>
+            <div class="form_part3 forms">
+                    <label>E-mail*
+                        <input type="email" name="email"/>
+                    </label>
+            </div>
 
-            <label>Confirme sua senha*
-                <input type="password" name="senha"/>
-            </label>
+            <div class="form_part4 forms">
+                <div class="superacao senha"
+                    <label>Crie sua senha*
+                        <input type="password" name="senha"/>
+                    </label>
+                </div>
 
-            <label>Onde você nos conhece!*
-                <select name="conhecer" id="onde_vc_conhece">
-                    <option>Google</option>
-                    <option>YouTube</option>
-                    <option>Instagram</option>
-                    <option>Pessoa Próxima</option>
-                </select>
-            </label>
+                <div class="superacao senha">
+                    <label>Confirme sua senha*
+                        <input type="password" name="senha"/>
+                    </label>
+                </div>
+            </div>
 
-            <label>Quero receber ofertas e novidades por E-mail, SMS ou WhatsApp.
-                <input type="checkbox" name="ofertas"/>
-            </label>
+            <div class="form_part5 forms">
+                <label>Onde você nos conhece!*
+                    <select name="conhecer" id="onde_vc_conhece">
+                        <option>Google</option>
+                        <option>YouTube</option>
+                        <option>Instagram</option>
+                        <option>Pessoa Próxima</option>
+                    </select>
+                </label>
+            </div>
 
-            <label>Li e estou de acordo com as políticas da empresa e políticas de privacidade.
-                <input type="checkbox" name="politica"/>
-            </label>
+            <div class="form_part6 forms">
+                <label>Quero receber ofertas e novidades por E-mail, SMS ou WhatsApp.
+                    <input type="checkbox" name="ofertas"/>
+                </label>
+
+                <label>Li e estou de acordo com as políticas da empresa e políticas de privacidade.
+                    <input type="checkbox" name="politica"/>
+                </label>
+            </div>
             
             <input type="button" value="continuar"/>
         </form>
