@@ -25,7 +25,6 @@ h1 {
 }
 
 label {
-    display: block;
     margin-right: 10px;
 }
 
@@ -54,33 +53,25 @@ input {
     padding: 10px;
 }
 
-.form_part1,
-.form_part2,
+.primeiro_form {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.form_part3 input{
+    width: 100%;
+}
 .form_part4 {
-    justify-content: space-between ;
+    justify-content: space-between;
 }
-.separacao {
-    flex: 1;
-}
-
-.form_part1 input,
-.form_part2 input,
-.form_part4 input{
-    width: 90%;
-}
-
-.data,
-.telefone {
+.form_part5 select {
     width: 100%;
 }
-.senha {
-    width: 49.8%;
+.form_part6 {
+    flex-direction: column;
 }
-
-.form_part3 {
-    display: block;
-    width: 100%;
-}
-.form_part3 input {
-    width: 86.8%;
+#botao {
+    display: flex;
+    justify-content: center;
 }

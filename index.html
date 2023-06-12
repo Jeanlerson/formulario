@@ -24,32 +24,37 @@
                 </label>
             </div>
 
+            <!--parte cima "tipo de conta"-->
 
-            <div class="form_part1 forms">
-                <div class="separacao">
-                    <label>Nome Completo*
-                        <input type="text" name="nome"/>
-                    </label>
+            <div class="primeiro_form">
+                <div class="form_part1">
+                    <div>
+                        <label>Nome Completo*
+                            <input type="text" name="nome"/>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>Data de Nascimento*
+                            <input type="date" name="nascimento"/>
+                        </label>
+                    </div>
+                    
                 </div>
 
-                <div class="separacao">
-                    <label>CPF*
-                        <input type="number" name="cpf"/>
-                    </label>
-                </div>
-            </div>
+                <div class="form_part2">
+                
+                    <div>
+                        <label>CPF*
+                            <input type="number" name="cpf"/>
+                        </label>
+                    </div>
 
-            <div class="form_part2 forms">
-                <div class="superacao data">
-                    <label>Data de Nascimento*
-                        <input type="date" name="nascimento"/>
-                    </label>
-                </div>
-
-                <div class="superacao telefone">
-                    <label>Número de Telefone*
-                        <input type="tel" name="nascimento"/>
-                    </label>
+                    <div>
+                        <label>Telefone celular*
+                            <input type="tel" name="nascimento"/>
+                        </label>
+                    </div>
                 </div>
             </div>
 
@@ -94,7 +99,9 @@
                 </label>
             </div>
             
-            <input type="button" value="continuar"/>
+            <div id="botao">
+                <input type="button" value="continuar"/>
+            </div>
         </form>
     </article>
 </body>
