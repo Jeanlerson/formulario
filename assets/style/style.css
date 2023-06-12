@@ -10,7 +10,7 @@ article {
     justify-content: center;
 }
 form {
-    width: 900px;
+    width: 800px;
     background-color: #303099;
     padding: 30px;
     border-radius: 20px;
@@ -27,16 +27,18 @@ h1 {
 label {
     margin-right: 10px;
 }
+.form_part1 label,
+.form_part2 label,
+.form_part3 label,
+.form_part4 label,
+.form_part5 label {
+    display: flex;
+    flex-direction: column;
+}
 
 .forms {
     display: flex;
     margin: 10px;
-}
-
-fieldset {
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
 }
 
 form h1{
@@ -51,27 +53,108 @@ form h1{
 
 input {
     padding: 10px;
+    outline: 0;
+    border: 2px solid #000;
+    border-radius: 5px;
 }
 
-.primeiro_form {
+.form_part1 input,
+.form_part2 input,
+.form_part3 input,
+.form_part4 input {
+    font-size: 15px;
+}
+
+.primeiro_form,
+.form_part4 {
     display: flex;
     justify-content: space-between;
     margin: 10px;
 }
 
-.form_part3 input{
-    width: 100%;
+.sub_form_part {
+    margin-bottom: 10px;
 }
-.form_part4 {
-    justify-content: space-between;
+
+.form_part1,
+.form_part2,
+#senha1,
+#senha2 {
+    flex: 1;
+}
+
+.form_part3 input {
+    width: 750px;
 }
 .form_part5 select {
-    width: 100%;
+    width: 770px;
+}
+
+.form_part4 {
+    justify-content: space-between;
 }
 .form_part6 {
     flex-direction: column;
 }
+
+.form_part6 a{
+    color: #000;
+}
 #botao {
     display: flex;
     justify-content: center;
+}
+#mod_botao {
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+}
+
+select {
+    outline: 0;
+    font-size: 15px;
+    height: 35px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+footer {
+    height: 80px;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.footer_copy {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #5c5c5c;
+    border-bottom: 2px dotted #2c2c2c;
+}
+
+.footer_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#insta {
+    width: 30px;
+    padding-right: 8px;
+}
+#linke {
+    width: 36px;
+}
+#git {
+    width: 48px;
 }

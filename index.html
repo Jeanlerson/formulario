@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="viewport" content="width=device-width,user-scalable=0"/>
     <link rel="stylesheet" type="text/css" href="assets/style/style.css"/>
     <title>Formulário</title>
 </head>
@@ -16,11 +16,13 @@
 
             <h1>Tipo de conta</h1>
             <div class="tipoDe_pessoa forms">
-                    <label>Pessoa Física
+                    <label>
                         <input type="radio" name="tipo_conta" value="pessoa_fisica"/>
+                        Pessoa Física
                     </label>
-                <label>Pessoa Jurídica
+                <label>
                      <input type="radio" name="tipo_conta" value="pessoa_juridica"/>
+                     Pessoa Jurídica
                 </label>
             </div>
 
@@ -28,7 +30,7 @@
 
             <div class="primeiro_form">
                 <div class="form_part1">
-                    <div>
+                    <div class="sub_form_part">
                         <label>Nome Completo*
                             <input type="text" name="nome"/>
                         </label>
@@ -44,7 +46,7 @@
 
                 <div class="form_part2">
                 
-                    <div>
+                    <div class="sub_form_part">
                         <label>CPF*
                             <input type="number" name="cpf"/>
                         </label>
@@ -64,14 +66,14 @@
                     </label>
             </div>
 
-            <div class="form_part4 forms">
-                <div class="superacao senha"
+            <div class="form_part4">
+                <div id="senha1">
                     <label>Crie sua senha*
                         <input type="password" name="senha"/>
                     </label>
                 </div>
 
-                <div class="superacao senha">
+                <div id="senha2">
                     <label>Confirme sua senha*
                         <input type="password" name="senha"/>
                     </label>
@@ -90,19 +92,45 @@
             </div>
 
             <div class="form_part6 forms">
-                <label>Quero receber ofertas e novidades por E-mail, SMS ou WhatsApp.
-                    <input type="checkbox" name="ofertas"/>
+                <label>
+                    <input type="checkbox" name="ofertas" id="checkbox"/>
+                    Quero receber ofertas e novidades por E-mail, SMS ou WhatsApp.
                 </label>
 
-                <label>Li e estou de acordo com as políticas da empresa e políticas de privacidade.
+                <label>
                     <input type="checkbox" name="politica"/>
+                    Li e estou de acordo com as <a href="">da empresa e políticas de privacidade.*</a> 
                 </label>
             </div>
             
             <div id="botao">
-                <input type="button" value="continuar"/>
+                <input type="button" value="CONTINUAR" id="mod_botao"/>
             </div>
+            
         </form>
     </article>
+    <footer>
+        <div class="footer_copy">
+            Copyright - Jeanlerson Santos
+        </div>
+        <div class="footer_img">
+            <div class="footer_logo">
+                <a href="https://github.com/Jeanlerson">
+                    <img id="git" src="assets/img/git.png"/>
+                </a>
+            </div>
+            <div class="footer_logo">
+                <a href="https://www.instagram.com/jeanlerson/">
+                    <img id="insta" src="assets/img/insta.png"/>
+                </a>
+            </div>
+            <div class="footer_logo">
+                <a href="https://www.linkedin.com/in/jeanlerson-dos-santos-da-silva-366933277/">
+                    <img id="linke" src="assets/img/linke.png"/>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
