@@ -158,3 +158,79 @@ footer {
 #git {
     width: 48px;
 }
+
+@media (max-width: 870px) {
+    form {
+        width: 500px;
+    }
+
+    .form_part3 input {
+        width: 207px;
+    }
+    
+    .form_part5 select {
+        width: 230px;
+    }
+
+    .form_part1 input,
+    .form_part2 input,
+    .form_part3 input,
+    .form_part4 input {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 300px;
+    }
+
+    .tipoDe_pessoa {
+        font-size: 15px;
+    }
+
+    .primeiro_form,
+    .form_part4 {
+        display: block;
+    }
+    
+    input {
+        padding: 5px;
+    }
+    
+    label {
+        font-size: 14px;
+    }
+
+    .form_part3 input {
+        width: 257px;
+    }
+    
+    .form_part5 select {
+        width: 270px;
+    }
+
+    select {
+        height: 30px;
+        font-size: 13px;
+    }
+
+    #senha1 {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 370px) {
+    form {
+        width: 250px;
+    }
+
+    .form_part3 input {
+        width: 207px;
+    }
+    
+    .form_part5 select {
+        width: 220px;
+    }
+    
+}
