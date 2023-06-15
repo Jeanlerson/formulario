@@ -110,6 +110,10 @@ input {
     color: #fff;
     font-size: 15px;
 }
+#mod_botao:hover{
+    background-color: #fff;
+    color: #000;
+}
 
 select {
     outline: 0;
@@ -158,6 +162,12 @@ footer {
 #git {
     width: 48px;
 }
+
+input:hover,
+select:hover {
+    background-color: #ccc;
+}
+
 
 @media (max-width: 870px) {
     form {
@@ -217,6 +227,13 @@ footer {
 
     #senha1 {
         margin-bottom: 5px;
+    }
+
+    #calend {
+        margin-bottom: 10px;
+    }
+    #senha1 {
+        margin-bottom: 10px;
     }
 }
 
